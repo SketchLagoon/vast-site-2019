@@ -1,0 +1,27 @@
+body {
+  background-color: #160131;
+  color: white;
+  overflow-x: hidden;
+}
+
+.giveaways {
+  width: 80%;
+  height: auto;
+  display:block;
+  margin:auto;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.title-img {
+  float: left;
+  height: 75px;
+  margin-right: 0.5em;
+}
+
+/* .city {
+  width: 100%;
+} */
