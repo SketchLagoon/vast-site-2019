@@ -1,5 +1,5 @@
 body {
-  background-color: #160131;
+  /* background-color: #160131; */
   color: white;
   overflow-x: hidden;
 }
@@ -9,19 +9,55 @@ body {
   height: auto;
   display:block;
   margin:auto;
+  border-radius: 15px;
 }
 
 .title {
   font-size: 50px;
+  line-height: 75px;
   font-weight: 700;
+  text-align: left;
 }
 
 .title-img {
-  float: left;
+  /* float: left; */
   height: 75px;
-  margin-right: 0.5em;
+  /* margin-right: 1.5em; */
+  margin-left: 40%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
 }
 
+.title-box {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.MuiBottomNavigationAction-root.Mui-selected {
+  color: white !important;
+}
+
+.MuiBottomNavigation-root {
+  filter: drop-shadow(0 -6mm 4mm rgba(0, 0, 0, 0.15));
+  border-radius: 15px 15px 0 0;
+}
+
+.giveaway-grid {
+  margin-bottom: 10vh !important;
+}
 /* .city {
   width: 100%;
 } */
+
+video#bgVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  min-width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  z-index: -100;    
+  background-size: cover;
+  }

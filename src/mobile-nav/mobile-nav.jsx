@@ -10,7 +10,8 @@ const useStyles = makeStyles({
   root: {
     width: "100vw",
     position: "fixed",
-    bottom: 0
+    bottom: 0,
+    background: "#5556d8",
   }
 });
 
