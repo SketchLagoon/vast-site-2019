@@ -19,8 +19,9 @@ function App() {
         <div className="title-box">
           {/* <img src="gift.png" class="title-img"></img> */}
           {/* <p className="title">GIVEAWAYS</p> */}
+          <img src="gift.png" class="title-img"></img>
         </div>
-        <img src="gift.png" class="title-img"></img>
+       
 
         <Grid container spacing={4} className="giveaway-grid">
           <Grid item xs={12} sm={4}>

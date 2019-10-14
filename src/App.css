@@ -21,17 +21,17 @@ body {
 
 .title-img {
   /* float: left; */
-  height: 75px;
+  display: block;
+  width: 75px;
   /* margin-right: 1.5em; */
-  margin-left: 40%;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin: 0 auto 0 auto;
+  padding: 5vh;
 
 }
 
 .title-box {
   width: 100%;
-  margin: 0 auto;
+  height: 33vh;
 }
 
 .MuiBottomNavigationAction-root.Mui-selected {
