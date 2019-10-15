@@ -36,6 +36,7 @@ body {
 
 .MuiBottomNavigationAction-root.Mui-selected {
   color: white !important;
+  /* color: #160131 !important; */
 }
 
 .MuiBottomNavigation-root {

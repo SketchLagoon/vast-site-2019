@@ -26,55 +26,55 @@ function App() {
         <Grid container spacing={4} className="giveaway-grid">
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/1.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/2.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/3.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/4.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/1.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/2.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/3.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/4.png"
               className="giveaways"
             ></img>
           </Grid>
           <Grid item xs={12} sm={4}>
             <img
-              src="https://via.placeholder.com/500"
+              src="/giveaways/1.png"
               className="giveaways"
             ></img>
           </Grid>
