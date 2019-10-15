@@ -18,7 +18,7 @@ function Home() {
         <div className="title-box">
           {/* <img src="gift.png" class="title-img"></img> */}
           {/* <p className="title">GIVEAWAYS</p> */}
-          <img src="gift.png" class="title-img"></img>
+          {/* <img src="gift.png" class="title-img"></img> */}
         </div>
        
 
