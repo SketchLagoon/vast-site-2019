@@ -6,9 +6,8 @@ import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
 import CardGiftcardIcon from '@material-ui/icons/CardGiftcard';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ForumIcon from '@material-ui/icons/Forum';
-import Typography from "@material-ui/core/Typography";
-import { blue } from "@material-ui/core/colors";
 import Dialog from "@material-ui/core/Dialog";
+import "../home/App.css"
 
 const useStyles = makeStyles({
   root: {
@@ -16,6 +15,9 @@ const useStyles = makeStyles({
     position: "fixed",
     bottom: 0,
     background: "#5556d8",
+  },
+  test:{
+    backgroundColor:'purple'
   }
 });
 
@@ -24,10 +26,6 @@ function SimpleDialog(props) {
 
   const handleClose = () => {
     onClose(selectedValue);
-  };
-
-  const handleListItemClick = value => {
-    onClose(value);
   };
 
   return (
@@ -54,23 +52,32 @@ SimpleDialog.propTypes = {
 
 export default function LabelBottomNavigation() {
   const classes = useStyles();
-  const [value, setValue] = React.useState("recents");
+  const [value, setValue] = React.useState(new URL(window.location.href).pathname.toString());
   const [open, setOpen] = React.useState(false);
   const [selectedValue, setSelectedValue] = React.useState();
 
 
   const handleClickOpen = () => {
     setOpen(true);
-    console.log("modal click works! now get it to open...")
   };
 
   const handleClose = value => {
     setOpen(false);
+    //set contact form to re-apply nav selection to page instead of contact here
   };
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
     setSelectedValue(value);
   };
+
+  const loadHome = () =>{
+    window.location.href = "/";
+  }
+
+  const loadServices = () =>{
+    window.location.href = "/services";
+  }
 
   return (
     <BottomNavigation
@@ -78,16 +85,22 @@ export default function LabelBottomNavigation() {
       onChange={handleChange}
       className={classes.root}
     >
-      <BottomNavigationAction
-        label="Giveaways"
-        value="recents"
-        icon={<CardGiftcardIcon />}
-      />
-      <BottomNavigationAction
-        label="Services"
-        value="favorites"
-        icon={<BusinessCenterIcon />}
-      />
+   
+        <BottomNavigationAction
+          label="Giveaways"
+          value="/"
+          icon={<CardGiftcardIcon />}
+          onClick={loadHome}
+        />
+   
+     
+        <BottomNavigationAction
+          label="Services"
+          value="/services"
+          icon={<BusinessCenterIcon />}
+          onClick={loadServices}
+        />
+     
       
       <BottomNavigationAction
         label="Contact"
