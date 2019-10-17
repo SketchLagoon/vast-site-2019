@@ -23,10 +23,10 @@ function SimpleDialog(props) {
       open={open}
     >
       <form action="https://formspree.io/jawright94" method="POST">
-        <input className="nameInput" placeholder="Name" type="text" name="name" style={style.test}/>
+        <input className="nameInput" placeholder="Name" type="text" name="name"/>
         <input className="emailInput" placeholder="Email" type="email" name="_replyto" />
         <textarea id="message" placeholder="Message..." type="text" name="message"/>
-        <input type="submit" value="Send" />
+        <input type="submit" value="Send"/>
       </form>
     </Dialog>
   );
