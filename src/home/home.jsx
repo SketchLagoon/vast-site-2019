@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import LabelBottomNavigation from "../mobile-nav/mobile-nav";
 import WOW from "wowjs";
 import "./App.css";
 
@@ -49,7 +48,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card" data-wow-offset="5" data-wow-delay="0.5s">
+              <div className="wow fadeInRight giveaway-card" data-wow-offset="1" data-wow-delay="0.1s">
                 <img
                   src="./giveaways/2.png"
                   alt="giveaway brand here"
@@ -68,7 +67,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card" data-wow-offset="2" data-wow-delay="0.2s">
                 <img
                   src="./giveaways/3.png"
                   alt="giveaway brand here"
@@ -87,7 +86,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card">
                 <img
                   src="./giveaways/4.png"
                   alt="giveaway brand here"
@@ -106,7 +105,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card">
                 <img
                   src="./giveaways/1.png"
                   alt="giveaway brand here"
@@ -125,7 +124,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card">
                 <img
                   src="./giveaways/2.png"
                   alt="giveaway brand here"
@@ -144,7 +143,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card">
                 <img
                   src="./giveaways/3.png"
                   alt="giveaway brand here"
@@ -163,7 +162,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card">
                 <img
                   src="./giveaways/4.png"
                   alt="giveaway brand here"
@@ -182,7 +181,7 @@ class Home extends Component {
               </div>
             </Grid>
             <Grid item xs={12} sm={4}>
-              <div className="wow fadeinright giveaway-card">
+              <div className="wow fadeInRight giveaway-card">
                 <img
                   src="./giveaways/1.png"
                   alt="giveaway brand here"

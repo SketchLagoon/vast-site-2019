@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
@@ -19,6 +19,9 @@ const useStyles = makeStyles({
 });
 
 function SimpleDialog(props) {
+
+
+  
   const { onClose, selectedValue, open } = props;
 
   const handleClose = () => {

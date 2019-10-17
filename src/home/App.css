@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.wow {
+  visibility: hidden;
+}
+
 .giveaways {
   width: 80%;
   height: auto;
