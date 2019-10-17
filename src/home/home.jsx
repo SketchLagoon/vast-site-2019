@@ -14,19 +14,17 @@ class Home extends Component {
   render() {
     return (
       <div className="App">
-        <video id="bgVideo" preload="true" autoPlay loop muted>
+        {/* <video id="bgVideo" preload="true" autoPlay loop muted>
           <source src="background-mp4.mp4" type="video/mp4" />
           <source src="background-webm.webm" type="video/webm" />
-        </video>
+        </video> */}
 
-        {/* <LabelBottomNavigation className="nav"></LabelBottomNavigation> */}
+        <div className="mobile-header wow fadeInDown">
+
+        </div>
+
         <Container fixed>
-          <div className="title-box">
-            {/* <img src="gift.png" class="title-img"></img> */}
-            {/* <p className="title">GIVEAWAYS</p> */}
-            {/* <img src="gift.png" class="title-img"></img> */}
-          </div>
-
+          <p className="wow fadeIn instructions" data-wow-offset="5" data-wow-delay="0.5s">Tap Image To Enter</p>
           <Grid container spacing={4} className="giveaway-grid">
             <Grid item xs={12} sm={4}>
               <div className="wow fadeInRight giveaway-card">
