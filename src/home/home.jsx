@@ -20,11 +20,17 @@ class Home extends Component {
         </video> */}
 
         <div className="mobile-header wow fadeInDown">
-
+          <div className="wow fadeIn mobile-header-content" data-wow-offset="10" data-wow-delay="1s">
+            <img src="./vast.png" alt="" srcset="" className="mobile-header-logo"/>
+            <div className="mobile-header-message">
+              <h1 className="mobile-header-title">FEELING LUCKY?</h1>
+              <p className="mobile-header-text">Enter one of our giveaways today for your chance at winning new Gaming PC’s, Graphics Cards, exclusive merch, and more!</p>
+            </div>
+          </div>
         </div>
 
-        <Container fixed>
-          <p className="wow fadeIn instructions" data-wow-offset="5" data-wow-delay="0.5s">Tap Image To Enter</p>
+        <Container fixed className="content">
+          <p className="wow fadeIn instructions" data-wow-offset="12" data-wow-delay="1.2s">Tap Image To Enter</p>
           <Grid container spacing={4} className="giveaway-grid">
             <Grid item xs={12} sm={4}>
               <div className="wow fadeInRight giveaway-card">
