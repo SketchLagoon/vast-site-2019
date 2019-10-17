@@ -45,6 +45,7 @@ body {
 
 .giveaway-grid {
   margin-bottom: 10vh !important;
+  overflow-x: hidden;
 }
 /* .city {
   width: 100%;

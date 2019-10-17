@@ -15,9 +15,6 @@ const useStyles = makeStyles({
     position: "fixed",
     bottom: 0,
     background: "#1c2755",
-  },
-  test:{
-    backgroundColor:'purple'
   }
 });
 
