@@ -3,11 +3,10 @@ body {
   color: white;
   overflow-x: hidden;
 }
-
-.wow {
-  visibility: hidden;
+a {
+  color: white;
+  text-decoration: none;
 }
-
 .mobile-header-content {
   padding: 1.25em 2em 2em 2em;
 }
