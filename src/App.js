@@ -4,15 +4,15 @@ import Home from "./home/home";
 import Services from "./services/services";
 import Giveaways from "./giveaways/giveaways"
 import LabelBottomNavigation from "./mobile-nav/mobile-nav";
-import WOW from "wowjs";
+// import WOW from "wowjs";
 import "./home/App.css";
 
 class App extends Component {
 
-  componentDidMount = () => {
-    const wow = new WOW.WOW();    
-    wow.init();
-  };
+  // componentDidMount = () => {
+  //   const wow = new WOW.WOW();    
+  //   wow.init();
+  // };
 
   render() {
     return (
@@ -20,7 +20,7 @@ class App extends Component {
         <Route path={"/giveaways"} component={Giveaways} />
         <Route path={"/services"} component={Services} />
         <Route exact path={"/"} component={Home} />
-        <LabelBottomNavigation className="wow fadeInUp nav"></LabelBottomNavigation>
+        <LabelBottomNavigation className="nav"></LabelBottomNavigation>
       </BrowserRouter>
     );
   }

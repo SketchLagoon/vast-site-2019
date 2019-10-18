@@ -65,14 +65,16 @@ class Giveaways extends Component {
   };
 
   render() {
-    const givewaysGrid = this.state.giveaways.map(function(giveaway) {
-      const wow = new WOW.WOW();
-      wow.init();
 
-      return (
+    const wow = new WOW.WOW();    
+    wow.init();
+
+    const givewaysGrid = this.state.giveaways.map(function(giveaway) {
+      //iterate a delay for data-wow-offset="2" data-wow-delay={delay} attributes
+        return (
         <Grid item xs={12} sm={4}>
           <a href={giveaway.gleamUrl}>
-            <div className="giveaway-card">
+            <div className="giveaway-card wow fadeInRight">
               <img
                 src={giveaway.imgUrl}
                 alt="giveaway brand here"
@@ -89,6 +91,7 @@ class Giveaways extends Component {
           </a>
         </Grid>
       );
+      
     });
 
     return (
@@ -100,7 +103,7 @@ class Giveaways extends Component {
         >
           Tap Image To Enter
         </p>
-        <Grid container spacing={4} className="wow fadeInRight giveaway-grid">
+        <Grid container spacing={4} className="giveaway-grid">
           {givewaysGrid}
         </Grid>
       </Container>

@@ -101,18 +101,30 @@ video#bgVideo {
 }
 
 form > input {
-  width: 80%;
-  margin-left: 6%;
-  margin-top: 5%;
+  width: 90%;
+  margin: 5% auto;
+  /* margin-top: 5%; */
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   padding: 10px;
+  color: white;
+
 }
 
 form {
-  padding: 50px 25px 50px 25px;
+  padding: 20px 25px 20px 25px;
+  background-color: #271c52;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: white;
+  color: #271c52;
+  border-radius: 10px;
+  width: 100% !important;
+  border: none;
 }
 
 .giveaway-card {
