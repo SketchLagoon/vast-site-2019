@@ -13,6 +13,11 @@ const base = new Airtable({ apiKey: "key2rS5KPkm5x8R7I" }).base(
   "applPoA2NeoQ18YDa"
 );
 
+
+//initialize wow so that dynamically generated content will take hold of wow on view functionality
+const wow = new WOW.WOW();    
+wow.init();
+
 class Giveaways extends Component {
   constructor(props) {
     super(props);
@@ -52,6 +57,7 @@ class Giveaways extends Component {
               console.error(err);
               return;
             } else {
+              wow.sync();
             }
           }
         );
@@ -65,9 +71,6 @@ class Giveaways extends Component {
   };
 
   render() {
-
-    const wow = new WOW.WOW();    
-    wow.init();
 
     const givewaysGrid = this.state.giveaways.map(function(giveaway) {
       //iterate a delay for data-wow-offset="2" data-wow-delay={delay} attributes

@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Giveaways from "../giveaways/giveaways"
-import Container from "@material-ui/core/Container";
-import Grid from "@material-ui/core/Grid";
 import WOW from "wowjs";
 import "./App.css";
 

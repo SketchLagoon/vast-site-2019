@@ -174,3 +174,33 @@ input[type="submit"] {
   font-weight: 500;
   font-size: 10px;
 }
+
+.mobile-services-header{
+  width: 100vw;
+  height: 33vh;
+  background-image: url("./services.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #2d4179;
+  border-radius: 0 0 15px 15px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.15));
+}
+
+.services-card {
+  margin-top: 36.5vh;
+  position: relative;
+  padding: 24px;
+  height: 250px;
+  background-color: #271c52;
+  border-radius: 15px;
+}
+.services-card-header {
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 auto 0 auto;
+}
+
