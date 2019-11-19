@@ -1,19 +1,25 @@
 body {
-  background-color: #150031;
+  /* background-image: url("./bg.jpg"); */
+  background-color: #160131;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   overflow-x: hidden;
 }
+
 a {
   color: white;
   text-decoration: none;
 }
+
 .mobile-header-content {
   padding: 1.25em 2em 2em 2em;
 }
 
-.mobile-header-message{
-position: absolute;
-bottom: 16px;
+.mobile-header-message {
+  position: absolute;
+  bottom: 16px;
 }
 
 .mobile-header-title {
@@ -24,7 +30,6 @@ bottom: 16px;
   font-size: 14px;
   width: 85%;
 }
-
 
 .mobile-header-logo {
   height: 3.25em;
@@ -46,7 +51,7 @@ bottom: 16px;
 
 .instructions {
   font-family: montserrat, sans-serif;
-  color: #6d6777;
+  color: #fff;
   font-size: 12px;
   margin-left: 16px;
   margin-bottom: 22px;
@@ -110,7 +115,6 @@ form > input {
   border-bottom: 1px solid white;
   padding: 10px;
   color: white;
-
 }
 
 form {
@@ -141,7 +145,7 @@ input[type="submit"] {
   border-radius: 15px;
 }
 
-.giveaway-card-text{
+.giveaway-card-text {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
@@ -175,7 +179,7 @@ input[type="submit"] {
   font-size: 10px;
 }
 
-.mobile-services-header{
+.mobile-services-header {
   width: 100vw;
   height: 33vh;
   background-image: url("./services.png");
@@ -183,19 +187,20 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-color: #2d4179;
   border-radius: 0 0 15px 15px;
-  position: fixed;
-  top: 0;
   z-index: 99;
   filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.15));
 }
 
 .services-card {
-  margin-top: 36.5vh;
   position: relative;
+  bottom: 0;
   padding: 24px;
   height: 250px;
-  background-color: #271c52;
+  background-color: #2c4077;
+  background-image: url("./services-content-bg.png");
+  background-size: 100%;
   border-radius: 15px;
+  filter: drop-shadow(0 6mm 4mm rgba(0, 0, 0, 0.15));
 }
 
 .services-card-header {
@@ -205,3 +210,34 @@ input[type="submit"] {
   margin: 0 auto 0 auto;
 }
 
+.services-card-sub-header {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 auto 0 auto;
+}
+
+.package-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: Space-around;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.package-nav p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.selected-package {
+  padding: 8px 16px 8px 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+}
+
+.package-image {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 16px;
+}

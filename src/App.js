@@ -1,29 +1,20 @@
-import React, { Component } from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./home/home";
 import Services from "./services/services";
-import Giveaways from "./giveaways/giveaways"
-import LabelBottomNavigation from "./mobile-nav/mobile-nav";
-// import WOW from "wowjs";
+import GiveawayContainer from "./giveaways/GiveawayContainer";
 import "./home/App.css";
+import MobileNav from "./mobile-nav/MobileNav";
 
-class App extends Component {
-
-  // componentDidMount = () => {
-  //   const wow = new WOW.WOW();    
-  //   wow.init();
-  // };
-
-  render() {
-    return (
-      <BrowserRouter>
-        <Route path={"/giveaways"} component={Giveaways} />
-        <Route path={"/services"} component={Services} />
-        <Route exact path={"/"} component={Home} />
-        <LabelBottomNavigation className="nav"></LabelBottomNavigation>
-      </BrowserRouter>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path={"/giveaways"} component={GiveawayContainer} />
+      <Route path={"/services"} component={Services} />
+      <Route exact path={"/"} component={Home} />
+    </Switch>
+    <MobileNav />
+  </BrowserRouter>
+);
 
 export default App;
