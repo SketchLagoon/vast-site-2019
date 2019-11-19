@@ -106,7 +106,7 @@ video#bgVideo {
 }
 
 form > input {
-  width: 90%;
+  width: 100%;
   margin: 5% auto;
   /* margin-top: 5%; */
   border: 0;
